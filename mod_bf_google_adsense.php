@@ -23,7 +23,7 @@ if (empty($user->id) || $params->get('showloggedin')) {
   $ip_block_list = trim( $params->get('ip_block_list'));
   foreach (preg_split( '/[,\s]+/', $ip_block_list) as $value)	{
     if (empty($value)) continue;
-    if (preg_match('/^' . $value . '$/', $_SERVER["REMOTE_ADDR"])) {
+    if (preg_match('/^' . $value . '$/', FOFUtilsIp::getIp())) {
       $layout .= '-alternate';
       break;
     }
