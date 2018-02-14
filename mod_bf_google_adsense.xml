@@ -67,4 +67,8 @@
 			</fieldset>
 		</fields>
 	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Google Adsense by BrainforgeUK">https://brainforge.co.uk/media/com_bfupdater/mod_googleadsense.xml</server>
+	</updateservers>
 </extension>
